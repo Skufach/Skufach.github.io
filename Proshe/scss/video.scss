@@ -1,0 +1,12 @@
+.video {
+	background: #fff url('../img/video-bg.png') center center no-repeat;
+	background-size: cover;
+	&-text {
+		font-size: 1.2rem;
+		color: $white;
+	}
+	iframe {
+		max-width: 550px;
+		min-height: 200px;
+	}
+}

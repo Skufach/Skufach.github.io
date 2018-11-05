@@ -1,0 +1,27 @@
+.decision {
+	background:transparent url(../img/decision-bg.png) center center no-repeat;
+	background-size: cover;
+	&-list {
+		margin-bottom: 2rem;
+		h3 {
+			color: $white;
+		}
+		li {
+			margin-top: 1.5rem;
+			position: relative;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 1.2rem;
+				height: 0.1rem;
+				background-color: #fff;
+				top:50%;
+				left:-2rem;
+			}
+		}
+		@media (max-width: 576px) {
+			margin-left: 3rem;
+		}
+	}
+}

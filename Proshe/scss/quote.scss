@@ -1,0 +1,21 @@
+.quote {
+	background: #fff url(../img/quote/quote-bg.png) center center no-repeat;
+	background-size: cover;
+	&-content {
+		@include bold;
+		font-size: 1.7rem;
+		color: #5a5a5a;
+		@media (max-width: 768px) {
+			font-size: 1.5rem;
+		}
+		@media (max-width: 576px) {
+			font-size: 1.3rem;
+		}
+	}
+	h3 {
+		margin-top: 2rem;
+		@media (max-width: 768px) {
+			margin-top: 1.1rem;
+		}
+	}
+}

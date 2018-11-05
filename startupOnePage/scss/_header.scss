@@ -1,0 +1,68 @@
+.header {
+	background: $grey;
+	text-align: center;
+	&-content {
+		padding: 220px 0;
+
+		h1 {
+			font-size: 4rem;
+			text-transform: uppercase;
+			color: $dark-grey;
+		}
+	}
+	&-nav {
+		position: relative;
+		padding: 2rem 0;
+		width: 100%;
+		background-color: white;
+		&-navigation {
+			z-index: 1;
+			display: flex;
+			li {
+				margin: auto;
+			}
+			a {
+				display: block;
+				width: 100%;
+				font-size: 1.3rem;
+				text-transform: uppercase;
+				padding: 0.5rem 1rem;
+				color:$dark-grey;
+				&:hover {
+					color:white;
+					background-color: $turquoise;
+					border-radius: 10px;
+				}
+				@media 	(max-width: 992px) {
+					display: block;
+					height: 100%;
+					width: 100%;
+					padding: 0;
+				}
+			}
+			@media 	(max-width: 992px) {
+				position: fixed;	
+				width: 60vw;	
+				height: 50vh;	
+				top: 0;
+				right: -100%;
+				padding: 1rem 0;
+				flex-direction: column;
+				justify-content: space-between;
+				background-color: $turquoise;
+				color: white;
+				transition: all 0.5s;
+			}
+			&_active {	
+				right: 0%;	
+			}
+		}
+		&_fixed {
+			position: fixed;
+			z-index: 100;
+			top:0;
+			border-bottom: 1px solid $turquoise;
+		}
+	}
+}
+

@@ -1,0 +1,44 @@
+.footer {
+	
+	&-unique {
+		padding: 2rem 0 1rem;
+		background-color: $grey;
+		h2 {
+			margin-top: 5%;
+			vertical-align: middle;
+			font-size: 1.3rem;
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+	&-contact {
+		&-map {
+			position: absolute;
+			width: 100%;
+		}	
+		&-form {
+			display: block;
+			position: relative;
+			margin-top: 2rem;
+			width: 100%;
+			background-color: white;
+			display: flex;
+			flex-direction: column;
+			input,textarea {
+				display: block;
+				width: 90%;
+				margin: 2rem 5%;
+			}
+		}
+	}
+	&-copyright {
+		display: block;
+		margin-top: 4rem;
+		padding: 3rem 0;
+		background-color: $dark-grey;
+		@media (max-width: 375px) {
+			margin-top: 35rem;
+		}
+	}
+}

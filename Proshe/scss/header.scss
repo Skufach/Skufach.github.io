@@ -1,0 +1,73 @@
+.header {
+	display: block;
+	max-height: 550px;
+	padding: 8rem 0;
+	background: #fff url('../img/header/1.png') center center no-repeat;
+	background-size: cover; 
+	&-top {
+		margin-top: -4rem;
+		&-logo {
+			display: inline-block;
+		}
+		&-menu {
+			display: inline-block;
+			list-style: none;
+			column-count : 2;
+			margin-left: 4rem;
+			vertical-align: top;
+			li {
+				font-size: 1.1rem;
+				padding-bottom: 1rem;
+				margin-right: 2rem;
+				a {
+					text-decoration: none;
+					font-weight: 700;
+					color: black;
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+			@media (max-width: 768px) {
+				margin: 0;
+				margin-top: 1rem;
+				
+			}
+		}
+	}
+	&-bottom {
+		margin-top: 1rem;
+		p {
+			font-size: 1.7rem;
+			padding: 2rem 0;
+			@media (max-width: 768px) {
+				padding: 1rem 0;
+			}
+			@media (max-width: 576px) {
+				font-size: 1.4rem;
+				padding: 0.5rem 0;
+			}
+		}
+		&-contacts {
+			max-width: 370px;
+			color: $white;
+			text-align: center;
+			p {
+				padding: 0.3rem 0;	
+				font-size: 1.5rem;	
+				&:first-child {
+					font-size: 1.1rem;	
+				}
+			}	
+		}
+		@media (max-width: 768px) {
+			margin-top: 0;
+		}
+		@media (max-width: 576px) {
+			margin-top: 1.5rem;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-top: -2rem;
+	}
+}

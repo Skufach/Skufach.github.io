@@ -1,0 +1,7 @@
+.offer {
+ h2 {
+	&:before, &:after {
+		background: $dark-grey;
+	}
+ }
+}
