@@ -61,11 +61,11 @@ gulp.task('prodaction', ['timeFold'], function(){
   .pipe(urlAdjuster({
     replace:  ['../../img/','../img/'],
   }))
-  // .pipe(autoprefixer({
-  //   browsers: ['last 3 versions'],
-  //   cascade: false
-  // }))
-  // .pipe(cleanCSS({compatibility: 'ie8'}))
+  .pipe(autoprefixer({
+    browsers: ['last 3 versions'],
+    cascade: false
+  }))
+  .pipe(cleanCSS({compatibility: 'ie8'}))
   .pipe(rename('bundle.min.css'))
   .pipe(gulp.dest('dist/'))
 
