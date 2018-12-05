@@ -1,0 +1,34 @@
+.social {
+  &-href {
+    position: relative;
+    a {
+      color: white;
+      &:hover {
+        color: darken(white, 25%);
+      }
+    }
+    h4 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      @media (max-width: 992px) {
+        transform: translate(0, -50%);
+      }
+      @media (max-width: 576px) {
+        top: 0;
+        transform: translate(0, 0);
+      }
+      //@media (max-width: 484px) {
+      //  margin-top: 1rem;
+      //  font-size: 1.4rem;
+      //}
+    }
+    img {
+    @media (max-width: 576px) {
+      width: 20%;
+      height: 20%;
+    }
+    }
+  }
+}

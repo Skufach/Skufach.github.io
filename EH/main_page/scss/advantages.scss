@@ -1,0 +1,16 @@
+.advantages {
+  &-list {
+    padding: 1rem 0;
+    &-item {
+      margin: 2rem 0;
+    }
+    @media (max-width: 484px) {
+      padding: 0;
+    }
+  }
+  h3 {
+    text-align: left;
+    display: inline-block;
+    transform: translateY(-25%);
+  }
+}
